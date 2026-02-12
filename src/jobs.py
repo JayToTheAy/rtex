@@ -6,7 +6,7 @@ import logs
 
 COMMAND_LATEX = "xelatex -no-shell-escape -interaction=nonstopmode -output-directory={pdir} {fname}"
 
-COMMAND_IMG_CONVERT = "convert -density {density} -quality {quality} -background white -alpha remove -alpha off -colorspace RGB {pdf} {dest}"
+COMMAND_IMG_CONVERT = "convert -trim -density {density} -quality {quality} -background white -alpha remove -alpha off -colorspace RGB {pdf} {dest}"
 
 
 def mkdir(p):
