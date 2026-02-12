@@ -5,11 +5,13 @@
 Minimal LaTeX rendering server.
 
 Requirements:
-- Python 3.5.2
+- Python 3.13
 - The libraries in `requirements.txt`
 - An installation of LaTeX, of some description.
 	- MikTeX and TeXLive both work decently.
 - A command called `convert`. I think it's part of imagemagik but I'm not sure.
+
+Originally by dxsmiley. Forked by classabbyamp to add docker support. Forked again by jaytotheay to update docker images and re-add trim.
 
 ## Security Concerns
 
