@@ -11,9 +11,7 @@ import time
 import shutil
 import traceback
 
-
-loop = asyncio.get_event_loop()
-app = aiohttp.web.Application(loop = loop)
+app = aiohttp.web.Application()
 app.router.add_static('/static', './static')
 app.router.add_get('/favicon.ico',
     lambda r : aiohttp.web.HTTPSeeOther('./static/favicon.png')
